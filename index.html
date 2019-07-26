@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky_diff.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<H2>NOAA Fisheries Integrated Toolbox</H2>
+					<H3>Onboarding Tools Overview</H3>
+				</section>
+				<section>
+					What is the toolbox?
+				</section>
+				<section>
+					<section>
+
+					<h3>Initial Process</h3>
+					<ul>
+						<li>Request Onboarding</li>
+						<li> NOAA Github Policy walk through for NOAA developers</li>
+						<li> Version Control Implementation</li>
+						<li> Metadata form about tool</li>
+						<li> Coding Standards Best Practices</li>
+						<li> Code Repository Stats (active/inactive, latest version)</li>
+						<li> DOI for referencing code</li>
+					</ul>
+
+					</section>
+					<section>
+						<h5>Request Onboarding</h5>
+						<p>Contact fisheries.toolbox@noaa.gov to get started</p>
+
+					</section>
+					<section>
+						<h5>NOAA GitHub Policy</h5>
+						<p>NOAA has specific guidlines that cover use of GitHub for version control.  Tool designers can opt to use internal tools such as VLAB as well. Only NOAA affiliated personal will be able to directly push to a NOAA GitHub repository but the code is publica;y available. Outside collaboratirs will be able to work seperately and perform a pull-request to have their changes accepted. </p>
+
+					</section>
+					<section>
+						<h5>Version Control Implementation</h5>
+						<p>All code needs to be under version control, locally and on a server.  Basic information about version control and best practices for the toolbox are available through resources.</p>
+
+					</section>
+					<section>
+						<h5>Meta-data Form</h5>
+						<p>Inital authors of a tool fill out a meta-data form about their tool which includes, background informtation that can be made public on the tools landing page.</p>
+
+					</section>
+					<section>
+						<h5>Coding Standards Best Practices</h5>
+						<p>We will implement code review for toolbox tools - though existing software may be too long/complex to review line-by-line, changes will be reviewed.
+
+						We also recommend you review your code proactively for common software features, including documentation, a test suite, the ability to receive and report issues, etc.. and remedy as many of them as you can during onboarding. Once that is complete, we will issue a Fisheries Toolbox best practices badge.</p>
+
+					</section>
+					<section>
+						<h5>Code Repository Statistics</h5>
+						<p>Each repository will have code statistics badges on the landing page that allows for easily iddentifying the repositories activity.</p>
+
+					</section>
+					<section>
+						<h5>Code and Tool Referencing</h5>
+						<p>To ensure that tool authors and collaborators have aknowledgment on their tools, we recomend using code referencing such as zenodo.</p>
+
+					</section>
+				</section>
+				<section>
+				<h3>Initial Process Completed</h3>
+
+				<p><font color="#0093D0" >Link to Tool:</font> The tool receives a landing page and link on the toolbox website</p>
+				<p><font color="#0093D0" >Basic support level determined :</font>
+				Depending on the collaborators affiliations and development state of the tool, each tool recieves differeing levels of support from the NOAA National Modeling Team. </p>
+				</section>
+				<section>
+					<section>
+						<h3>Subsequent Steps</h3>
+						<ul>
+						<li> Code Badges</li>
+						<li> Documentation/User manual </li>
+						<li> Tutorials</li>
+						<li> Unit and Functional Testing</li>
+						<li> Continuous Integration</li>
+						<li> Journal Publications</li>
+						<li> Standard  Inputs/Outputs</li>
+						</ul>
+					</section>
+					<section>
+						<h5>Code Badges</h5>
+						<p>Standardized badges used in geenral software practices, such as those found on shields.io will be added to the code to help give users a sense of the structure and development stage of the code.  Specialized badges developed by the Fisheries Integrated Toolbox team will also be applied.</p>
+
+					</section>
+					<section>
+						<h5>Documentation and User Manual</h5>
+						<p>Source code documentation should be written in concert with with an auto-documentation generator.  Use of a documentation generator such as Doxygen, ROxygen, Sphinx, or JSDocs forces a standard approach to in-line documentation as well as allowing an easily readible user-guide for collaborators that can be output to to pdf or HTML.  These guides can then be linlkend to from the tools main page and extended to include other information for users and developers.   </p>
+
+
+					</section>
+					<section>
+						<h5>Tutorials/Examples</h5>
+						<p>Once a stable tool release is created, collaborators should include tutorials and examples that both inform users as well as can be used to ensure that released code works as expected.</p>
+
+
+					</section>
+
+					<section>
+						<h5>Unit and Functional Testing</h5>
+						<p>Unit testing ensures that pieces of the code work as intenteded.  Functional testing works to ensure that chunks of code work wotgether correctly.</p>
+					</section>
+					<section>
+						<h5> Continuous Integration</h5>
+						<p>A server based system for collaborators to automate testing during the push of new code ensures that new code additions will work with the underlying code.</p>
+
+
+
+					</section>
+					<section>
+						<h5> Journal Publications</h5>
+						<p>Publishing tols and models with a specifc version can be done various ways including through the Journal of Open Source Software.</p>
+
+
+					</section>
+					<section>
+						<h5> Standard  Inputs/Outputs</h5>
+						<p> Although listed last, if early in the devleopment stage, creating an architecture that standardizes inputs and outputs to the tool qwith allow a simpler way for users and collaboratrors to interact with the tool in the future.  This will enable outside collaborators to build API's or Front End User Interfaces more simply.  We suggest when possible to opt for configuration files wirtten in JSON to enable this.</p>
+					</section>
+				</section>
+
+				<section>
+					<h3>Continued Contributions</h3>
+				</section>
+				<section>
+					<h3>Cloud APplication Devleopment</h3>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
