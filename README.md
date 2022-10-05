@@ -1,3 +1,3 @@
 # FIT-Onboarding-Presentation
 
-Presentation to help onboard new tools and tool developers to FIT.
+Presentation to help onboard new tools and tool developers to FIT. Uses reveal.js
