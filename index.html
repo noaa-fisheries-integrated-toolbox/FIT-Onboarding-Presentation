@@ -30,59 +30,65 @@
 					<H3>Onboarding Tools Overview</H3>
 				</section>
 				<section>
-					<h5>Toolbox Overview</h5>
-					<p>The<a href="https://noaa-fisheries-integrated-toolbox.github.io/"> NOAA Fisheries Integrated Toolbox </a>(NOAA FIT) is an interdisciplinary, web-based portal of tools that can be used for a variety of applications, including stock assessment modeling, forecasting, and data preparation for fish and protected species, as well as economic and ecosystem modeling. This web portal facilitates easier sharing and comparison of analytical tools (including ensemble modeling, model averaging, model coupling, and shared visualization). The FIT hosts a variety of tools developed by NOAA scientists and programmers, as well as those developed in collaboration with, and exclusively by external developers.</p>
+					<h4>About the FIT</h4>
+                    <p>The <a href="https://noaa-fisheries-integrated-toolbox.github.io/">NOAA Fisheries Integrated Toolbox </a>(FIT) aims to promote sharing of software solutions within the agency to reduce duplication. The FIT is a curated, web-based portal of data end-user software tools used within NOAA Fisheries. These tools support <a href="https://nmfs-opensci.github.io/">open science</a> workflows for NOAA Fisheries research and operations. The FIT also includes <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/">resources</a> to empower NOAA Fisheries scientists and developers to create reliable and sharable software.</p> 
 				</section>
 				<section>
 					<section>
 
 					<h3>Initial Process</h3>
 					<ul>
-						<li>Request Onboarding</li>
-						<li> NOAA Github Policy walk-through for NOAA Developers</li>
-						<li> Version Control Implementation</li>
-						<li> Metadata Form about Tool</i>
-						<li> Coding Standards Best Practices</li>
-						<li> Code Repository Stats (active/inactive, latest version)</li>
-						<li> DOI for Referencing Code</li>
+						<li>Review Onboarding Information</li>
+						<li>NOAA GitHub Best Practices</li>
+						<li>Version Control Implementation</li>
+						<li>Meta-data Form</li>
+						<!-- <li> Coding Standards Best Practices</li> -->
+						<!-- <li> Code Repository Stats (active/inactive, latest version)</li> -->
+						<li>Code and Tool Citation</li>
+						<li>App Hosting</li>
 					</ul>
 
 					</section>
 					<section>
-						<h5>Request Onboarding</h5>
-						<p>Review the overall process in these slides and then contact fisheries.toolbox@noaa.gov to get started</p>
+						<h4>Review Onboarding Information</h4>
+						<p>Review the overall process in these slides. If any questions arise, feel free to email fisheries.toolbox@noaa.gov.</p>
 
 					</section>
 					<section>
-						<h5>NOAA GitHub Policy</h5>
-						<p>NOAA has specific guidelines that cover the use of GitHub.  Tool designers can opt to use internal tools such as VLAB instead. Only NOAA-affiliated personnel will be able to directly push to an NOAA GitHub repository but the code is publicly available. Outside collaborators will be able to work separately and perform a pull request to have their changes accepted. </p>
+						<h4>NOAA GitHub Best Practices</h4>
+						<p>NOAA has specific guidelines that cover the use of GitHub. Learn more in the NMFS Open Science <a href="https://nmfs-opensci.github.io/GitHub-Guide/">GitHub Best Practices Guide</a>.</p>
 
 					</section>
 					<section>
-						<h5>Version Control Implementation</h5>
-						<p>All code needs to be under <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/onboarding/version-control/">version control</a>, locally and on a server.  Basic information about version control and <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/best-practices/best-practices-version-control/">best practices</a> for the toolbox are available through resources.</p>
+						<h4>Version Control Implementation</h4>
+						<p>All code needs to be under <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/developer%20resources/version-control/">version control</a>.</p>
 
 					</section>
 					<section>
-						<h5>Meta-data Form</h5>
+						<h4>Meta-data Form</h4>
 						<p>Authors of a tool fill out a meta-data form (contact fisheries.toolbox@noaa.gov) about their tool which includes background informtation that can be made public on the tools landing page.</p>
 
 					</section>
-					<section>
-						<h5>Coding Standards Best Practices</h5>
+					<!-- <section>
+						<h4>Coding Standards Best Practices</h4>
 						<p>We will implement code review for toolbox tools - though existing software may be too long/complex to review line-by-line, changes will be reviewed.
 
 						We also recommend you <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/best-practices/code-review/">review your code</a>  proactively for common software features, including documentation, a test suite, the ability to receive and report issues, etc. and remedy as many of them as you can during onboarding. Once that is complete, we will issue a Fisheries Toolbox best practices badge.</p>
 
-					</section>
-					<section>
-                        <h5>Code Repository Statistics</h5>
+					</section> -->
+					<!-- <section>
+                        <h4>Code Repository Statistics</h4>
                         <p>Each repository will have code statistics badges on the landing page that allows for easily iddentifying the repositories activity.</p>
 
-                    </section>
+                    </section> -->
                     <section>
-                        <h5>Code and Tool Referencing</h5>
-                        <p>To ensure that tool authors and collaborators have acknowledgment on their tools, we recommend using code referencing such as zenodo.</p>
+                        <h4>Code and Tool Citation</h4>
+                        <p>A citation is required to be onboarded to FIT. To ensure that tool authors and collaborators have acknowledgment on their tools, we recommend using code referencing such as <a href="https://zenodo.org/">Zenodo</a>.</p>
+
+					</section>
+					<section>
+                        <h4>App Hosting</h4>
+                        <p>If you have a Shiny App or Python App that needs hosting, the NMFS <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/noaa%20resources/R-products/">Posit Connect</a> Instance can be used. <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNODOiiAjFBQgoLJ50TJps_Xy85YaPlUxRiG6opLEFOQhQew/viewform?usp=sf_link">Request</a> a NMFS Posit Connect Instance Account(NOAA internal only).</p>
 
 					</section>
 				</section>
@@ -107,42 +113,42 @@
 						</ul>
 					</section>
 					<section>
-						<h5>Code Badges</h5>
+						<h4>Code Badges</h4>
 						<p>Standardized badges used in general software practices, such as those found on shields.io will be added to the code to help give users a sense of the structure and development stage of the code. Specialized badges developed by the Fisheries Integrated Toolbox team will also be applied.</p>
 
 					</section>
 					<section>
-						<h5>Documentation and User Manual</h5>
+						<h4>Documentation and User Manual</h4>
 						<p>Source <a href="https://noaa-fisheries-integrated-toolbox.github.io/resources/best-practices/code-documentation/">code documentation</a>  should be written in concert with an auto-documentation generator.  Use of a documentation generator such as Doxygen, ROxygen, Sphinx, or JSDocs forces a standard approach to in-line documentation as well as allowing an easily readable user-guide for collaborators that can be output to pdf or HTML. These guides can then be linked to from the tools main page and extended to include other information for users and developers. </p>
 
 
 					</section>
 					<section>
-						<h5>Tutorials/Examples</h5>
+						<h4>Tutorials/Examples</h4>
 						<p>Once a stable tool release is created, collaborators should include tutorials and examples that both inform users as well as can be used to ensure that released code works as expected.</p>
 
 
 					</section>
 
 					<section>
-						<h5>Unit and Functional Testing</h5>
+						<h4>Unit and Functional Testing</h4>
 						<p>Unit testing ensures that pieces of the code work as intenteded. Functional testing works to ensure that chunks of code work wotgether correctly.</p>
 					</section>
 					<section>
-						<h5> Continuous Integration</h5>
+						<h4> Continuous Integration</h4>
 						<p>A server based system for collaborators to automate testing during the push of new code ensures that new code additions will work with the underlying code.</p>
 
 
 
 					</section>
 					<section>
-						<h5> Journal Publications</h5>
+						<h4> Journal Publications</h4>
 						<p>Publishing tools and models with a specific version can be done various ways including through the Journal of Open Source Software.</p>
 
 
 					</section>
 					<section>
-						<h5> Standard Inputs/Outputs</h5>
+						<h4> Standard Inputs/Outputs</h4>
 						<p> Although listed last, if early in the development stage, creating an architecture that standardizes inputs and outputs to the tool with allow a simpler way for users and collaborators to interact with the tool in the future.  This will enable outside collaborators to build API's or Front End User Interfaces more simply.  We suggest when possible to opt for configuration files written in JSON to enable this.</p>
 					</section>
 				</section>
